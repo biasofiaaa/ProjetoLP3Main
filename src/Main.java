@@ -24,5 +24,17 @@ public class Main {
         // Calcular a mediana
         double median = NumberUtils.calcularMediana(numbers);
         System.out.println("Mediana: " + median);
+
+        // Calcular a moda
+        double mode = NumberUtils.calcularModa(numbers);
+        System.out.println("Moda: " + mode);
+
+        // Ordenar a lista em ordem crescente
+        List<Double> sortedAscending = NumberUtils.ordenarLista(numbers, true);
+        System.out.println("Ordem crescente: " + sortedAscending);
+
+        // Ordenar a lista em ordem decrescente
+        List<Double> sortedDescending = NumberUtils.ordenarLista(numbers, false);
+        System.out.println("Ordem decrescente: " + sortedDescending);
     }
 }
